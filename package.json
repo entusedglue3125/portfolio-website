@@ -1,0 +1,19 @@
+{
+  "name": "chakradhar-portfolio",
+  "version": "2.0.0",
+  "description": "Chakradhar Peela — Engineering Portfolio & LaunchDarkly Cockpit HUD with VectorCraft ruler",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "ai-ml",
+    "robotics",
+    "iot",
+    "ros2",
+    "ece"
+  ],
+  "author": "Chakradhar Peela",
+  "license": "MIT"
+}

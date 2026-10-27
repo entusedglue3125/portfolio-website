@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chakradhar Peela | ECE Engineer · AI/ML · IoT · GDG Lead</title>
+  <meta name="description" content="ECE student at SIMATS specializing in AI/ML, IoT, Robotics & Next-Gen Networks. GDG On Campus Lead. 279+ projects. Best Paper Award ICRIMR 2025." />
+  <meta property="og:title" content="Chakradhar Peela | ECE Engineer · AI/ML · IoT · GDG Lead" />
+  <meta property="og:description" content="ECE student at SIMATS — AI/ML, IoT, Robotics, 5G/6G Networks. GDG On Campus Lead." />
+  <meta name="theme-color" content="#f9f7f4" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Lenis Smooth Inertia Scroll (ArtCraft getartcraft.com/apps stack) -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Left Vertical Margin Telemetry Tape (ArtCraft HUD aesthetic) -->
+  <div class="artcraft-left-tape" aria-hidden="true">CHAKRADHAR PEELA // ECE &amp; AI SYSTEMS // v2.8</div>
+
+  <!-- ==========================================================================
+       ARTCRAFT VERTICAL SCROLL RULER & HUD RETICLE (getartcraft.com/apps)
+       ========================================================================== -->
+  <div id="artcraft-scroll-hud" class="artcraft-hud" aria-hidden="true">
+    
+    <!-- Section Directory Navigation (Right Edge Sub-Nav) -->
+    <nav class="artcraft-nav-dir" aria-label="Page section navigation">
+      <div class="artcraft-dir-list" id="artcraft-dir-list">
+        <a href="#home" class="dir-item active" data-target="home">
+          <span class="dir-num">01</span>
+          <span class="dir-title">Home</span>
+        </a>
+        <a href="#about" class="dir-item" data-target="about">
+          <span class="dir-num">02</span>
+          <span class="dir-title">About</span>
+        </a>
+        <a href="#skills" class="dir-item" data-target="skills">
+          <span class="dir-num">03</span>
+          <span class="dir-title">Skills</span>
+        </a>
+        <a href="#projects" class="dir-item" data-target="projects">
+          <span class="dir-num">04</span>
+          <span class="dir-title">Projects</span>
+        </a>
+        <a href="#experience" class="dir-item" data-target="experience">
+          <span class="dir-num">05</span>
+          <span class="dir-title">Journey</span>
+        </a>
+        <a href="#research" class="dir-item" data-target="research">
+          <span class="dir-num">06</span>
+          <span class="dir-title">Research</span>
+        </a>
+        <a href="#contact" class="dir-item" data-target="contact">
+          <span class="dir-num">07</span>
+          <span class="dir-title">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Precision Vertical Ruler Gauge with Sliding Tape & Rolling Scrubber Needle -->
+    <aside class="artcraft-ruler" id="artcraft-ruler" title="Click or drag to scrub position" role="scrollbar" aria-orientation="vertical">
+      <!-- Ghost Line on hover -->
+      <div class="ruler-ghost" id="ruler-ghost"></div>
+
+      <!-- Sliding Ruler Track with tick marks (0-100) -->
+      <div class="ruler-track" id="ruler-track"></div>
+
+      <!-- Live Needle Reticle with Glowing Readout Box -->
+      <div class="ruler-needle" id="ruler-needle">
+        <span class="ruler-needle-line"></span>
+        <div class="ruler-needle-badge" id="ruler-needle-badge">
+          <span id="ruler-percent-val">00</span><span class="ruler-percent-sym">%</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" role="banner">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Chakradhar Peela home">
+        <span class="nav-logo-box">CP</span>
+        <span class="nav-logo-name">Chakradhar Peela</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home" class="nav-link active"><span>Home</span></a>
+        <a href="#about" class="nav-link"><span>About</span></a>
+        <a href="#skills" class="nav-link"><span>Skills</span></a>
+        <a href="#projects" class="nav-link"><span>Projects</span></a>
+        <a href="#experience" class="nav-link"><span>Journey</span></a>
+        <a href="#research" class="nav-link"><span>Research</span></a>
+        <a href="#contact" class="nav-link"><span>Contact</span></a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="resume.pdf" download="Chakradhar_Peela_Resume.pdf" class="btn btn-surface">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+          Resume
+        </a>
+        <a href="#contact" class="btn btn-dark">Contact Me</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Navigation menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Journey</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" download>Download Resume</a>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left -->
+          <div>
+            <!-- Mobile portrait -->
+            <div class="hero-portrait-mobile reveal">
+              <div class="portrait-mobile-wrap">
+                <div class="portrait-mobile-shadow"></div>
+                <div class="portrait-mobile-frame">
+                  <img src="profile.jpeg" alt="Chakradhar Peela, ECE Engineer" />
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-badge reveal">
+              <span class="ping-dot"></span>
+              <span style="font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;">Open to Research &amp; AI/Robotics Roles</span>
+            </div>
+
+            <h1 class="hero-h1 reveal">
+              Chakradhar<br />
+              <span class="invert-word">Peela</span>
+            </h1>
+
+            <p class="hero-role reveal">ECE Engineer · AI/ML · IoT · GDG Lead</p>
+
+            <div class="hero-tags reveal">
+              <span class="hero-tag">Robotics &amp; ROS</span>
+              <span class="hero-tag">AI/ML Systems</span>
+              <span class="hero-tag">IoT &amp; Embedded</span>
+              <span class="hero-tag">5G/6G Networks</span>
+            </div>
+
+            <p class="hero-bio reveal">
+              I build <strong>intelligent systems that bridge hardware and AI</strong> — from gesture-controlled robotic arms and on-device AI pipelines to IoT sensor networks and next-gen communication stacks. GDG On Campus Lead. <strong>Best Paper Award ICRIMR 2025</strong>.
+            </p>
+
+            <div class="hero-ctas reveal">
+              <a href="#projects" class="btn btn-dark btn-lg">
+                View Projects
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="resume.pdf" download="Chakradhar_Peela_Resume.pdf" class="btn btn-lime btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+                Download Resume
+              </a>
+              <a href="#contact" class="btn btn-surface btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                Contact Me
+              </a>
+            </div>
+
+            <div class="hero-socials reveal">
+              <span class="hero-socials-label">Connect</span>
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <a href="https://www.linkedin.com/in/chakradhar-peela-231b64218/" target="_blank" rel="noreferrer noopener" class="social-btn" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452z"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125" target="_blank" rel="noreferrer noopener" class="social-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="mailto:peelachakradhar@gmail.com" class="social-btn" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Portrait + skill cards -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-portrait">
+              <div class="hero-portrait-shadow"></div>
+              <div class="hero-portrait-frame">
+                <img src="profile.jpeg" alt="Chakradhar Peela" />
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg>
+              </div>
+              <span class="skill-card-label">Robotics &amp; ROS</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon coral">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/></svg>
+              </div>
+              <span class="skill-card-label">AI/ML Systems</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon blue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <span class="skill-card-label">IoT &amp; Embedded</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon teal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              </div>
+              <span class="skill-card-label">5G / 6G Networks</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <span class="skill-card-label">n8n Automation</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-icon coral">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <span class="skill-card-label">Computer Vision</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">02</span> / Identity &amp; Background</p>
+          <p class="hud-eyebrow-sub">Saveetha School of Engineering · SIMATS</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">About</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="about-grid" style="margin-top:3rem;">
+
+          <!-- Left: dark photo card with text -->
+          <div class="about-photo-card reveal" style="background:#111;min-height:420px;">
+            <div class="about-photo-overlay"></div>
+            <div class="about-photo-content">
+              <p>I'm <span class="about-text-highlight">Chakradhar Peela</span>, an Electronics &amp; Communication Engineering student at <span class="about-text-highlight">Saveetha School of Engineering (SIMATS), Chennai</span>.</p>
+              <p>I specialize in <span class="about-text-highlight">AI/ML</span>, <span class="about-text-highlight">IoT</span>, <span class="about-text-highlight">Robotics</span>, Cybersecurity, and Next-Gen Networks (5G/6G) — building intelligent systems that bridge silicon and software.</p>
+              <p>As <span class="about-text-highlight">GDG On Campus Lead at SIMATS</span>, I organize large-scale tech events and lead an active developer community. I have rapidly prototyped over <span class="about-text-highlight">279+ engineering projects</span> spanning robotic systems, on-device AI pipelines, and IoT sensor arrays.</p>
+              <p>My work at the intersection of hardware and intelligence earned me the <span class="about-text-highlight">Best Paper Award at ICRIMR 2025</span>.</p>
+            </div>
+          </div>
+
+          <!-- Right: sidebar boxes -->
+          <div class="about-sidebar">
+
+            <div class="info-box reveal">
+              <div class="info-box-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+                Focus Areas
+              </div>
+              <div class="tags-row">
+                <span class="tag">AI/ML &amp; Deep Learning</span>
+                <span class="tag">IoT Protocols</span>
+                <span class="tag">Robotics &amp; ROS</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">5G Networks</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Cybersecurity</span>
+                <span class="tag">Signal Processing</span>
+              </div>
+            </div>
+
+            <div class="info-box reveal">
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <p class="info-list-label">Location</p>
+                    <p class="info-list-value">Chennai, Tamil Nadu, India</p>
+                  </div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  </div>
+                  <div>
+                    <p class="info-list-label">Education</p>
+                    <p class="info-list-value">B.E. ECE — SIMATS (CGPA: 9.0)</p>
+                  </div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <div>
+                    <p class="info-list-label">Role</p>
+                    <p class="info-list-value">GDG On Campus Lead, SIMATS</p>
+                  </div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <div>
+                    <p class="info-list-label">Achievement</p>
+                    <p class="info-list-value">Best Paper Award — ICRIMR 2025</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">03</span> / Technical Arsenal</p>
+          <p class="hud-eyebrow-sub">Hardware Design, Firmware &amp; AI Algorithms</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">Toolbox</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="skills-grid" style="margin-top:3rem;">
+
+          <div class="skill-box reveal">
+            <h3>Programming</h3>
+            <div class="tags-row">
+              <span class="tag">C / C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Embedded Systems</h3>
+            <div class="tags-row">
+              <span class="tag">ESP32</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">STM32</span>
+              <span class="tag">PCA9685</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Electronics &amp; Hardware</h3>
+            <div class="tags-row">
+              <span class="tag">PCB Design</span>
+              <span class="tag">Circuit Design</span>
+              <span class="tag">Sensors &amp; Actuators</span>
+              <span class="tag">KiCad</span>
+              <span class="tag">Soldering</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>AI / ML &amp; Computer Vision</h3>
+            <div class="tags-row">
+              <span class="tag">MediaPipe</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Ollama / LLMs</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Robotics &amp; Automation</h3>
+            <div class="tags-row">
+              <span class="tag">ROS 1 &amp; ROS 2</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Servo Kinematics</span>
+              <span class="tag">UDP Sockets</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Networking &amp; IoT</h3>
+            <div class="tags-row">
+              <span class="tag">5G Protocols</span>
+              <span class="tag">MQTT / CoAP</span>
+              <span class="tag">WiFi / BLE</span>
+              <span class="tag">LoRa / Zigbee</span>
+              <span class="tag">6G Research</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Software &amp; CAD Tools</h3>
+            <div class="tags-row">
+              <span class="tag">MATLAB / Simulink</span>
+              <span class="tag">Blender / FreeCAD</span>
+              <span class="tag">ModelSim</span>
+              <span class="tag">Claude Code</span>
+            </div>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Version Control &amp; Dev</h3>
+            <div class="tags-row">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Linux / Bash</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">04</span> / Selected Repositories</p>
+          <p class="hud-eyebrow-sub">github.com/entusedglue3125</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">Selected Work</span>
+          <h2 class="section-title">Projects</h2>
+          <div class="section-bar"></div>
+          <p class="section-desc">Robotics, artificial intelligence, computer vision &amp; embedded architectures — from GitHub &amp; beyond.</p>
+        </div>
+
+        <div class="projects-grid" style="margin-top:3rem;">
+
+          <!-- 01. NeuralArm -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img src="nuralarm.jpeg" alt="NeuralArm project" loading="lazy" />
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">01</span>
+                <span class="project-badge">Gesture Robotics | Vision AI</span>
+              </div>
+              <h3>NeuralArm</h3>
+              <p class="project-desc">A neural network-controlled robotic arm using MediaPipe for real-time gesture and pose tracking. Mirrors human hand movements via PCA9685 servo driver over UDP from laptop to Raspberry Pi.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag blue">MediaPipe</span>
+                <span class="project-tag blue">Raspberry Pi</span>
+                <span class="project-tag neutral">PCA9685</span>
+                <span class="project-tag neutral">OpenCV</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/NeuralArm" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125/NeuralArm" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open NeuralArm on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 02. A.R.E.S -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img src="A.R.E.S.png" alt="A.R.E.S Embedded Telemetry" loading="lazy" />
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">02</span>
+                <span class="project-badge">Embedded Telemetry</span>
+              </div>
+              <h3>A.R.E.S</h3>
+              <p class="project-desc">Autonomous Robotic &amp; Embedded System — a comprehensive real-time telemetry dashboard and control interface for autonomous embedded systems with HTML-based monitoring panels.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag blue">JavaScript</span>
+                <span class="project-tag neutral">Embedded Systems</span>
+                <span class="project-tag neutral">Telemetry</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/A.R.E.S" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125/A.R.E.S" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open A.R.E.S on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 03. Face Recognition Attendance -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop" alt="Face Recognition Attendance System" loading="lazy" />
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">03</span>
+                <span class="project-badge">OpenCV Vision | AI</span>
+              </div>
+              <h3>Face Recognition Attendance</h3>
+              <p class="project-desc">Automated attendance system using Python and OpenCV. Detects and recognizes faces in real-time via webcam, comparing against a database, logging name and timestamp to CSV.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag blue">OpenCV</span>
+                <span class="project-tag neutral">Face Recognition</span>
+                <span class="project-tag neutral">CSV Logging</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/Facerecognition_based_attendence_system" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125/Facerecognition_based_attendence_system" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open Face Recognition on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 04. CSV File Analyser -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img src="CSV.png" alt="CSV File Analyser" loading="lazy" />
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">04</span>
+                <span class="project-badge">Data Analysis | Web</span>
+              </div>
+              <h3>CSV File Analyser</h3>
+              <p class="project-desc">Web-based CSV analysis tool. Upload, visualize, and perform statistical analysis on CSV datasets with an interactive browser interface. Live on CodeSandbox.</p>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag blue">Data Analysis</span>
+                <span class="project-tag neutral">CSV Parsing</span>
+                <span class="project-tag neutral">Visualization</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/CSV_file_Analyser" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://codesandbox.io/p/github/entusedglue3125/CSV_file_Analyser" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open CSV Analyser Live">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 05. VoiceAI -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap" style="background:#1a1a2e;display:flex;align-items:center;justify-content:center;padding:2rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#c6f135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">05</span>
+                <span class="project-badge">Speech AI | TTS/STT</span>
+              </div>
+              <h3>VoiceAI Assistant</h3>
+              <p class="project-desc">Intelligent voice assistant with real-time acoustic recognition, intent parsing, wake-word activation, and voice-command hardware execution pipeline.</p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag blue">Speech Recognition</span>
+                <span class="project-tag neutral">TTS / STT</span>
+                <span class="project-tag neutral">Audio DSP</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/VoiceAI" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125/VoiceAI" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open VoiceAI on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 06. N8N Agentic Automation -->
+          <div class="reveal" style="height:100%;">
+            <article class="project-card">
+              <div class="project-img-wrap" style="background:#0d1117;display:flex;align-items:center;justify-content:center;padding:2rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#c6f135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div class="project-num-row">
+                <span class="project-num">06</span>
+                <span class="project-badge">Automation | AI Agents</span>
+              </div>
+              <h3>N8N Agentic Automation</h3>
+              <p class="project-desc">Custom automation workflows with n8n, orchestrating webhook triggers, local LLM inference through Ollama, and automated hardware alert dispatch pipelines.</p>
+              <div class="project-tags">
+                <span class="project-tag">n8n</span>
+                <span class="project-tag blue">Ollama LLM</span>
+                <span class="project-tag neutral">AI Agents</span>
+                <span class="project-tag neutral">Webhooks</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/entusedglue3125/N8N" target="_blank" rel="noreferrer noopener" class="btn btn-dark" style="font-size:0.75rem;padding:0.4rem 0.875rem;">
+                  View Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+                <a href="https://github.com/entusedglue3125/N8N" target="_blank" rel="noreferrer noopener" class="github-icon-btn" aria-label="Open N8N on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- GitHub CTA -->
+        <div class="github-cta reveal">
+          <h3>279+ Repositories &amp; Hardware Projects</h3>
+          <p>All robotics code, firmware, AI pipelines, and hardware models are documented and open-sourced on GitHub.</p>
+          <a href="https://github.com/entusedglue3125" target="_blank" rel="noreferrer noopener" class="btn btn-dark btn-lg">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            View All Repositories on GitHub
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ JOURNEY / EXPERIENCE ============ -->
+    <section id="experience">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">05</span> / Learning Journey</p>
+          <p class="hud-eyebrow-sub">2024 — Present Engineering Milestones</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">Journey</span>
+          <h2 class="section-title">Experience &amp; Timeline</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="exp-list" style="margin-top:3rem;">
+
+          <!-- GDG -->
+          <div class="exp-card reveal">
+            <div class="exp-card-header">
+              <div>
+                <h3>GDG On Campus Lead</h3>
+                <p class="exp-org">Google Developer Groups — Saveetha School of Engineering (SIMATS)</p>
+              </div>
+              <span class="exp-date active">2024 – Present</span>
+            </div>
+            <p class="exp-desc">Leading the GDG chapter at SIMATS — organizing tech events, workshops, and building an active developer community around cutting-edge technologies.</p>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Organized large-scale campus tech events and workshops
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Led developer community around AI, IoT, and Robotics
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Coordinated hackathon teams to winning outcomes
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">Community Leadership</span>
+              <span class="tag">Event Management</span>
+              <span class="tag">Developer Advocacy</span>
+            </div>
+          </div>
+
+          <!-- 2026 ROS -->
+          <div class="exp-card reveal">
+            <div class="exp-card-header">
+              <div>
+                <h3>Advanced Robotics &amp; ROS Ecosystem</h3>
+                <p class="exp-org">Independent — SIMATS Engineering Lab</p>
+              </div>
+              <span class="exp-date active">2026 (Current)</span>
+            </div>
+            <p class="exp-desc">Mastering ROS1, ROS2, and Gazebo simulation while building production-grade AI-linked robotic systems running fully on-device.</p>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Built first fully on-device AI-linked robotic arm (Raspberry Pi ecosystem)
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Mastered ROS2 node communication &amp; lifecycle management
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Integrated Gazebo simulation with real-hardware control loops
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">ROS 1</span>
+              <span class="tag">ROS 2</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">AI Automation</span>
+            </div>
+          </div>
+
+          <!-- 2025 milestone -->
+          <div class="exp-card reveal">
+            <div class="exp-card-header">
+              <div>
+                <h3>Robotics, Embedded &amp; Hackathons</h3>
+                <p class="exp-org">SIMATS Engineering — Independent R&amp;D</p>
+              </div>
+              <span class="exp-date past">2025 — Milestone</span>
+            </div>
+            <p class="exp-desc">Deep dive into Robotics and Embedded Systems. Built hackathon-winning teams and scaled rapid prototyping to 279+ completed projects.</p>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                279+ engineering projects completed &amp; open-sourced
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Mastered LLMs, n8n automation &amp; Claude Code toolchain
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Integrated 5G/6G communication with AI edge systems
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">Robotics</span>
+              <span class="tag">Embedded Systems</span>
+              <span class="tag">Hackathons</span>
+              <span class="tag">5G / 6G</span>
+              <span class="tag">Rapid Prototyping</span>
+            </div>
+          </div>
+
+          <!-- 2024 start -->
+          <div class="exp-card reveal">
+            <div class="exp-card-header">
+              <div>
+                <h3>Engineering Journey Begins</h3>
+                <p class="exp-org">Saveetha School of Engineering (SIMATS), Chennai</p>
+              </div>
+              <span class="exp-date past">2024 – Present</span>
+            </div>
+            <p class="exp-desc">Started B.E. Electronics &amp; Communication Engineering at SIMATS with 9.0 CGPA. Built foundational knowledge in hardware, firmware, and complex system integrations.</p>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                9.0 CGPA — Specializing in AI &amp; Robotics
+              </li>
+              <li class="exp-bullet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Member, Youth United Council of India — social impact initiatives
+              </li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">Engineering Foundations</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">Circuit Design</span>
+              <span class="tag">SIMATS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">06</span> / Publications &amp; Research</p>
+          <p class="hud-eyebrow-sub">Best Paper Award · ICRIMR 2025</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">Research</span>
+          <h2 class="section-title">Publications &amp; Research</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div style="margin-top:3rem;">
+          <div class="research-card reveal">
+            <div style="flex:1;">
+              <div class="research-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                Best Paper Award · ICRIMR 2025
+              </div>
+              <h3>Best Paper Award — ICRIMR 2025</h3>
+              <p style="color:var(--muted);font-size:0.9375rem;line-height:1.65;max-width:40rem;margin-bottom:1.5rem;">
+                Presented research at the <strong>International Conference on Recent Innovations in Multidisciplinary Research (ICRIMR 2025)</strong> and received the distinguished <strong>Best Paper Award</strong> for advances in multidisciplinary engineering and intelligent systems.
+              </p>
+              <div class="tags-row">
+                <span class="tag" style="background:var(--accent-lime);">Best Paper Award</span>
+                <span class="tag">Research</span>
+                <span class="tag">ICRIMR 2025</span>
+                <span class="tag">Multidisciplinary Engineering</span>
+                <span class="tag">Intelligent Systems</span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;flex-shrink:0;">
+              <a href="https://www.linkedin.com/posts/chakradhar-peela-231b64218_icrimr2025-awards-bestpaper-activity-7402494814040031232-n1qU" target="_blank" rel="noreferrer noopener" class="btn btn-lime btn-lg">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452z"/></svg>
+                View LinkedIn Announcement
+              </a>
+              <p style="font-family:'Space Mono',monospace;font-size:0.65rem;color:var(--muted);text-align:center;">Verified Publication Record</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="sticky-hud-eyebrow" aria-hidden="true">
+        <div class="container eyebrow-inner">
+          <p class="hud-eyebrow-text"><span class="hud-num">07</span> / Direct Transmission</p>
+          <p class="hud-eyebrow-sub">Open for Research &amp; AI Robotics</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something</h2>
+          <div class="section-bar"></div>
+          <p class="section-desc">Open to research collaborations, AI/robotics projects, and internship opportunities in AI, Embedded Systems, and Next-Gen Networks.</p>
+        </div>
+
+        <div class="contact-grid" style="margin-top:3rem;">
+
+          <div class="reveal">
+            <p style="font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--muted);margin-bottom:1rem;">Chennai, Tamil Nadu, India</p>
+            <div class="contact-links">
+              <a href="mailto:peelachakradhar@gmail.com" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </div>
+                <div>
+                  <p class="contact-link-label">Email</p>
+                  <p class="contact-link-value">peelachakradhar@gmail.com</p>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/chakradhar-peela-231b64218/" target="_blank" rel="noreferrer noopener" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452z"/></svg>
+                </div>
+                <div>
+                  <p class="contact-link-label">LinkedIn</p>
+                  <p class="contact-link-value">in/chakradhar-peela-231b64218</p>
+                </div>
+              </a>
+              <a href="https://github.com/entusedglue3125" target="_blank" rel="noreferrer noopener" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </div>
+                <div>
+                  <p class="contact-link-label">GitHub</p>
+                  <p class="contact-link-value">github.com/entusedglue3125</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-box reveal">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" class="form-input" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" class="form-input" placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell me about the project or opportunity..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-lg" style="width:100%;justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                Send Message
+              </button>
+              <p class="form-note">Submitting opens a pre-filled email. No data is stored automatically.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Chakradhar Peela<span class="dot">.</span> <span style="font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:400;text-transform:none;letter-spacing:0;color:rgba(255,255,255,0.5);">ECE Engineer · AI/ML · Robotics</span></p>
+        <p class="footer-sub">Building intelligent systems that bridge hardware &amp; AI.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/chakradhar-peela-231b64218/" target="_blank" rel="noreferrer noopener" class="footer-social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452z"/></svg>
+        </a>
+        <a href="https://github.com/entusedglue3125" target="_blank" rel="noreferrer noopener" class="footer-social-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="mailto:peelachakradhar@gmail.com" class="footer-social-btn" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
